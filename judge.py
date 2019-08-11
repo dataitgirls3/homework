@@ -27,6 +27,8 @@ def main():
                 cmds.append(build_test_cmd(homework, github_id))
 
     for cmd in cmds:
+        cmd_str = ' '.join(cmd)
+        print(f'run command: {cmd_str}')
         exitcode = subprocess.call(cmd)
         if exitcode != 0:
            sys.exit(exitcode) 
