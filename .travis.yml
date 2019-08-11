@@ -9,7 +9,7 @@ install:
 
 script:
   - export PYTHONPATH=$PYTHONPATH:.
-  - ls homework00/solutions/homework*.py | awk -F'[_.]' '{print "pytest -v homework00/test_" substr($1, 20) ".py --githubid=" $2}' | bash
-  - ls homework01/solutions/homework*.py | awk -F'[_.]' '{print "pytest -v homework01/test_" substr($1, 20) ".py --githubid=" $2}' | bash
-  - ls homework02/solutions/homework*.py | awk -F'[_.]' '{print "pytest -v homework02/test_" substr($1, 20) ".py --githubid=" $2}' | bash
-  - ls homework03/solutions/homework*.py | awk -F'[_.]' '{print "pytest -v homework03/test_" substr($1, 20) ".py --githubid=" $2}' | bash
+  - ls homework00/solutions/homework*.py | awk -F'[_.]' '{print "pytest -v homework00/test_homework00.py --githubid=" $2}' | bash
+  - ls homework01/solutions/homework*.py | awk -F'[_.]' '{print "pytest -v homework01/test_homework01.py --githubid=" $2}' | bash
+  - ls homework02/solutions/homework*.py | awk -F'[_.]' '{print "pytest -v homework02/test_homework02.py --githubid=" $2}' | bash
+  - ls homework03/solutions/homework*.py | awk -F'[_.]' '{print "pytest -v homework03/test_homework03.py --githubid=" $2}' | bash
