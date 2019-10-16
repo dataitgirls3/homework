@@ -11,5 +11,11 @@ def filter_by_length(l, n):
             filtered.append(x)
     return filtered
 
-def without_vowels(x):
-    pass
+def without_vowels(s):
+    filtered_s = ''
+    s_list = list(s)
+
+    for x in s_list:
+        if x not in 'aeiouAEIOU':
+            filtered_s += x
+    return filtered_s
