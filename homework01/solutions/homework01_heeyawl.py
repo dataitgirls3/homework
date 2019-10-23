@@ -8,6 +8,6 @@ def filter_by_length(x,n):
 	return [i for i in x if len(i) == n]
 
 def without_vowels(x):
-	vowels = ['a', 'e', 'i', 'o', 'u']
+	vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
 	split = [i for i in list(x) if i not in vowels]
 	return ''.join(split) 
