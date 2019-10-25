@@ -11,7 +11,8 @@ def stddev(x):
 
 #7  딕셔너리의 키와 값을 바꾸는 함수
 def invert(x):
-    return {v:k for k,v in x.items}
+    return {v:k for k,v in x.items()}
+
 
 #8 : 두 리스트를 하나의 딕셔너리로 합쳐주는 함수
 def to_dict(x, y):
