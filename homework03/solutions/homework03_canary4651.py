@@ -22,7 +22,7 @@ def corrcoef(x, y):
     def stddev(n):
         avg = sum(n)/len(n)
         return np.sqrt(sum((i-avg)**2 for i in n)/len(n))
-    return covariance(X,Y)/ (stddev(x)*stddev(y))
+    return covariance(x,y)/ (stddev(x)*stddev(y))
 
 # 13 : 정수 리스트가 주어졌을 때, 이 리스트가 오름차순인지 확인하세요.
 # 오름차순이라면 True를, 그렇지 않다면 False를 반환하는 함수를 작성하세요.
